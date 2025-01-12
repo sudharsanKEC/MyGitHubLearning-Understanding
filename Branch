@@ -19,4 +19,4 @@ Benefits of branches:
 Start branching:
     In the repo page where it contains all the files , you can able to find a dropdown menu with a name main,
 which represents the actual main or master branch of the repository.
-
+    There we can type the testbranchdemo and  create a test branch for demo
