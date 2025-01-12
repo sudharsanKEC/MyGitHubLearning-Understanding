@@ -1,0 +1,10 @@
+--> Sign up with a gmail account
+--> Create a repo by clicking the + icon.
+--> public access - repository is visible for everyone
+--> private access - we can choose who can see our repo,mostly used by organizations
+--> give short description about the repo
+--> create repository
+--> create a file in that repo
+--> you can upload your code by copying the content or upload it as a file format like zip,excel sheet,xml,txt,pdf
+--> After uploading it, now you should commit i.e saving the file, you can mention why you have commited
+--> the reason that why you have commited the file will be appeared in the repo file viewing page
