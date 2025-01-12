@@ -15,6 +15,14 @@ Benefits of branches:
     1)Develop features
     2)Fix bugs
     3)Safely experiment with new ideas
+    
+Start branching:
+    In the repo page where it contains all the files , you can able to find a dropdown menu with a name main,
+which represents the actual main or master branch of the repository.
+    There we can type the testbranchdemo and  create a test branch for demo
+    
+    
+TestBranchDemo
   
 
 
@@ -43,4 +51,5 @@ to it. So, we dont think in the way, that we are pushing it from the testdemobra
 The main branch is pulling the testbranchdemo.
 
 Approach in the master branch's point of view, not in the test branch's point of for the pull request.
+
 
