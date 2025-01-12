@@ -1,3 +1,10 @@
-As like branch, fork is something similar to branch
+    As like branch, fork is something similar to branch
 
-In branch, we create a branch repo for the main or master repo withi
+    In branching, we create a branch for the main or master within the repo for some enhancing or experimenting with the
+existing code without affecting the existing code.
+
+    But in this fork, if a repo is public, and if another user found it from the github , if he want the same source
+code or his project or if he suggests to improve our existing code he can modify our source code within his workspace
+which wont affect our branch at any time.
+  After that he may sent a pull request to merge it with our code, we may merge it according to our wish
+
