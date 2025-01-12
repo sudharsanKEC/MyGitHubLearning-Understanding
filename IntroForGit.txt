@@ -3,6 +3,7 @@ What is Git?
 	Created by Linus Torvalds, while developing the Linux, he was not able to manage the expanding coding lines,so he himself created the Git
 	Git has a seperate terminal
 	GitHub is one of the UI for the Git
+	It is collabarative tool for multiple users to work on a single project
 ==============================================================================================================================================================
 Need for Git:
 	Software code is often changed according to the improvements in it, so managing those become difficult when it has huge lines of code, 
@@ -11,6 +12,8 @@ inorder to find where we have made the changes, we use git, which will helps us 
 What is GitHub?
 	A software which has git as its underlying concept
 	It was first created as an individual company ,then later it was acquired by Microsoft.
+	It was better to store our codes or programs related to our project online.
+	Official site: www.github.com.
 ===============================================================================================================================================================
 Basic terminologies in GitHub:
   1)Repository - We can consider this like a folder which consists of all the files related to separate project
