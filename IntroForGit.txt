@@ -10,7 +10,7 @@ Need for Git:
 inorder to find where we have made the changes, we use git, which will helps us to identify the changes
 ==============================================================================================================================================================
 What is GitHub?
-	A software which has git as its underlying concept
+	A software which has git as its underlying concept i.e. github provides the git service.
 	It was first created as an individual company ,then later it was acquired by Microsoft.
 	It was better to store our codes or programs related to our project online.
 	Official site: www.github.com.
