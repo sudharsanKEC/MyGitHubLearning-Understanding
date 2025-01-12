@@ -52,4 +52,7 @@ The main branch is pulling the testbranchdemo.
 
 Approach in the master branch's point of view, not in the test branch's point of for the pull request.
 
+To verify this,
+Goto insights->network there you can see how it is merged.
 
+After merging the testbranchdemo to the main branch , we can delete the testbranchdemo if dont need that no more.
