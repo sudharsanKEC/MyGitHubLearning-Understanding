@@ -1,0 +1,18 @@
+Branch : 
+    Imagine this scenario where your code runs well and good(master ), but you have thought to improve it further,
+but you are worrying about that may create a problem in the existing performance of the code, so you feel, you dont 
+want to change the existing code instead you can create a branch file for the existing file and there you can able to made your
+further changes for your code, which will dont affect the original good code.
+    After a while, you have found that the branch code is working well then you can able to merge it with the
+previuos existing code by sending a pull request.
+
+In some professional words:
+    A branch  is to isolate development work without affecting other branches in the repository.
+    Each repository has its own one default branch, and can have multiple other branches. You can merge a branch into another branch using 
+a pull request.
+
+Benefits of branches:
+    1)Develop features
+    2)Fix bugs
+    3)Safely experiment with new ideas
+  
