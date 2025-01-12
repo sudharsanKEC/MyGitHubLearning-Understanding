@@ -8,3 +8,13 @@
 --> you can upload your code by copying the content or upload it as a file format like zip,excel sheet,xml,txt,pdf
 --> After uploading it, now you should commit i.e saving the file, you can mention why you have commited
 --> the reason that why you have commited the file will be appeared in the repo file viewing page
+
+--> after uploading the code and commiting, then if you again open and made any change that can identified by the 
+git version control system.
+--> adding or removing a single or multiple line will also be reflected in the version control.
+--> you can verify the changes by the following steps:
+        1) Click on the repository page which contains all the files in it.
+        2) Click on the file that you have commited last
+        3) After the file opened, you will note a heading like something before the codes of the file with your 
+username 
+        4) In that, you will see a hashcode (something like 6a1667e) , by clicking on that you will able to see the changes that you have made. 
