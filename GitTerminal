@@ -11,9 +11,36 @@ Any text editor - I am using visual studio code
 Installed git for 64 bit windows from https://git-scm.com/downloads/win
 After completing the installation process opened git bash.
 
+Difference between git bash and git cmd
+
+Git bash - look and feel like linux
+Git CMD - looks like windows terminal
 
 
+Git commands:
 
+Work on the current change (see also: git help everyday)
+
+add  :   Add file contents to the index
+mv   :   Move or rename a file, a directory, or a symlink
+reset: Reset current HEAD to the specified state
+rm: Remove files from the working tree and from the index
+Examine the history and state (see also: git help revisions)
+
+bisect: Use binary search to find the commit that introduced a bug
+grep: Print lines matching a pattern
+log: Show commit logs
+show: Show various types of objects
+status: Show the working tree status
+Grow, mark, and tweak your common history
+
+branch: List, create, or delete branches
+checkout: Switch branches or restore working tree files
+commit: Record changes to the repository
+diff: Show changes between commits, commit and working tree, etc.
+merge: Join two or more development histories together
+rebase: Reapply commits on top of another base tip
+tag: Create, list, delete, or verify a tag object signed with GPG
 
 
 
