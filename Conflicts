@@ -1,1 +1,19 @@
-Conflicts
+Conflicts:
+    When a same line was changed by two same peoples while forking and if they both rises a pull request,
+there rises a conflict .
+    Inorder to merge them we must resolve the confict.
+    Conflicts also arise during the test branch and main branch merging.
+
+<<<<<<<< master
+The above denotes that there was line trying to fit in an already existing line
+
+=========
+The line here denotes that this has to be replaced by the new line
+>>>>>>> master
+
+
+
+
+
+
+
