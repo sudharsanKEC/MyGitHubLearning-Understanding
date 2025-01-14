@@ -13,37 +13,260 @@ After completing the installation process opened git bash.
 
 Difference between git bash and git cmd
 
-Git bash - look and feel like linux
-Git CMD - looks like windows terminal
+Git bash - look and feel like linux - linux commands used
+Git CMD - looks like windows terminal - windows cmd commands used
 
-
+============================================================================================================
 Git commands:
+
+start a working area (see also : git help tutorial)
+
+clone   :   Clone a repository into a new directory
+init    :   Create an empty Git repository or reinitialize an existing one
+
+================================================================================
 
 Work on the current change (see also: git help everyday)
 
-add  :   Add file contents to the index
-mv   :   Move or rename a file, a directory, or a symlink
-reset: Reset current HEAD to the specified state
-rm: Remove files from the working tree and from the index
+add      :     Add file contents to the index
+mv       :     Move or rename a file, a directory, or a symlink
+reset    :     Reset current HEAD to the specified state
+rm       :     Remove files from the working tree and from the index
+
+=================================================================================
+
 Examine the history and state (see also: git help revisions)
 
-bisect: Use binary search to find the commit that introduced a bug
-grep: Print lines matching a pattern
-log: Show commit logs
-show: Show various types of objects
-status: Show the working tree status
+bisect    :    Use binary search to find the commit that introduced a bug
+grep      :    Print lines matching a pattern
+log       :    Show commit logs
+show      :    Show various types of objects
+status    :    Show the working tree status
+
+=================================================================================
+
 Grow, mark, and tweak your common history
 
-branch: List, create, or delete branches
-checkout: Switch branches or restore working tree files
-commit: Record changes to the repository
-diff: Show changes between commits, commit and working tree, etc.
-merge: Join two or more development histories together
-rebase: Reapply commits on top of another base tip
-tag: Create, list, delete, or verify a tag object signed with GPG
+branch    :     List, create, or delete branches
+checkout  :     Switch branches or restore working tree files
+commit    :     Record changes to the repository
+diff      :     Show changes between commits, commit and working tree, etc.
+merge     :     Join two or more development histories together
+rebase    :     Reapply commits on top of another base tip
+tag       :     Create, list, delete, or verify a tag object signed with GPG
+
+======================================================================================================
+
+collaborate (see also : git help workflows)
+
+fetch     :    Download objects and refs from another repository
+pull      :    Fetch from and integrate with another repository or a local branch
+
+push      :    Update remote refs along with associated objects
+
+
+'git help -a' and 'git help -g' list available subcommands and some concept guides. See 'git help' or
+'git help' to read about a specific subcommand or concept.
+
+=================================================================================================================
+
+Commonly used commands:
+          init,status,add,commit,pull and push.
+
+Created a folder GitCMDWorking in the D - drive 
+
+Right click that folder and click "Open git bash here"
+create two files named index.html and app.js
+Using the below commands:
+
+touch index.html (creates a index.html file in that folder)
+//I have opened and typed some html program in that
+touch app.js (creates a app.js file in that folder)
+//I have typed console.log("Hello Ram!") in the app.js file
+
+
+Next:
+
+Created a local repository using:
+git init (creates a local repository in the GitCMDWorking folder)
+Note: When we creating that folder for the first time using the git terminal, it may be hidden in the GitCMDWorking
+we need to enable hidden files in the view option on the top of file explorer.
+
+Then we are adding the index.html in that .git folder by the below comments:
+
+git add index.html
+
+/*
+Doubt : If I add some files in the .git folder using the git add, is that be visible in that .git folder?
+
+Answer from chat gpt:
+
+No, files you add using git add will not appear directly in the .git folder. Here's why:
+
+How git add Works:
+When you use git add, files are staged for the next commit.
+Staged files are stored in the Git index (also known as the staging area), which is an intermediate area between your working directory and the repository history.
+What Happens in the .git Folder?
+The .git folder contains the internal structure of your Git repository, including configuration, metadata, and the history of commits.
+When you git add a file, Git does not place the file itself in the .git folder. Instead:
+It stores compressed and hashed blobs representing the file's contents.
+These objects are kept in the .git/objects directory.
+Will You See Added Files in .git?
+No, you won't see the actual file contents in the .git folder.
+Instead, Git stores data in an optimized and hashed format for efficient tracking and storage.
+Viewing the Internals:
+If you're curious, you can explore the .git folder and Git's internal structure:
+================
+View Objects: 
+
+bash
+ls .git/objects
+=================
+
+Inspect a Specific Object (e.g., after adding a file): Use the git hash-object command to find the hash of a file:
+
+bash
+Copy code
+git hash-object path/to/your/file
+Then look for that hash in .git/objects.
+*/
 
 
 
+Then we are seeing the status of those folders using the command :
+git status
+
+Then again we are removing the index.html in .git by using below:
+
+$ git rm --cached index.html
+
+Now if we want to add a large number of files to that local repository, use the command below:
+
+git add .
+the above command adds all the files(index.html,app.js) in GitCMDWorking to the .git folder in GitCMDWorking
+
+Now I am removing all previously added files in the .git folder using the below command:
+git rm -r --cached .
+Eg:
+$ git rm -r --cached .
+rm 'app.js'
+rm 'index.html'
+
+Now we can able to add a specific types of file in the .git folder using its file extensions with the command below:
+
+$ git add *.js
+The above command add all the js files in the .git folder(like wise I have also added the HTML file using git add *.html)
+
+Now I am again removed all the files
+
+/*
+While working we have some needs to take notes, but we dont need that to add to git, for that
+*/
+
+Now I am creating a file called MyReference for my reference.
+
+Now if we want to move all the files to .git using "git add ." command , then all the files will move to .git
+but actually we dont want to add the MyReference text file in the .git folder, for that we can include these unwanted files in a file called .gitignore
+
+Create file called .gitignore in the same directory where the .git is located by using the command:
+
+touch .gitignore
+
+Now open the .gitignore file and type the MyReference.txt there which we dont want to add in the .git
+
+Now if we add all the files in the GitCMDWorking to the .git using "git add ."
+All the files(index.html,app.js, .gitignore) were added except the MyReference.txt file
+
+========================================================================================================================================
+Now commiting files:
+Command : git commit -m "initial commit"
+
+Problem faced:
+
+after the command " git commit -m "initial commit" " and after pressing enter.
+
+A problem occurs as below:
+
+WELCOME@DESKTOP-PN81Q0T MINGW64 /d/GitCMDWorking (master)
+$ git commit -m "initial commit"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'WELCOME@DESKTOP-PN81Q0T.(none)'
+)
+
+I have referred chat gpt now:
+
+Chat gpt's answer:
+
+The error message indicates that Git doesn't know who you are because your user identity (name and email) hasn't been configured. These settings are necessary for Git to track changes and associate them with an author.
+
+To resolve this issue, you need to configure your Git username and email.
+
+Steps to Set Your Git Username and Email:
+
+1. Set Global Identity (Applies to All Repositories):
+Run these commands in Git Bash to configure your name and email globally:
+
+git config --global user.name "Your Name"
+git config --global user.email "you@example.com"
+
+Replace:
+
+"Your Name" with your actual name (e.g., John Doe).
+"you@example.com" with your email address.
+
+2. Set Local Identity (Optional - Specific to Current Repository):
+
+If you want to set a unique name and email for just this repository:
+
+git config user.name "Your Name"
+git config user.email "you@example.com"
+
+This overrides the global settings for the current repository.
+
+3. Verify Your Settings:
+To confirm that your configuration is correct, use:
+
+For global settings:
+git config --global --list
+
+For local (repository-specific) settings:
+git config --list
+
+4. Retry Your Commit:
+
+Now that your identity is set, retry your commit:
+git commit -m "initial commit"
+
+
+Now I have overcame the error.
+
+Now after this , I am tried again committing.
+
+$ git commit -m "initial commit"
+[master (root-commit) bbab8d6] initial commit
+ 3 files changed, 13 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 app.js
+ create mode 100644 index.html
+
+bbab8d6 - a hashcode(like which every hash code generated for a commit in the GitHub)
+Root - master
+Successfully commited.
+
+Now we are going to move those files which are locally in the .git to github
+
+Now I am going to create a DummyRepo in github
 
 
 
