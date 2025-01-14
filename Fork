@@ -8,6 +8,7 @@ code or his project or if he suggests to improve our existing code he can modify
 which wont affect our branch at any time.
   After that he may sent a pull request to merge it with our code, we may merge it according to our wish
 
+
 Fork:
     When a community wants to contribute to our repository, they dont have direct permission to edit it,
 instead they can fork it and make changes according to their idea and suggest the owner to merge it by sending a 
@@ -17,6 +18,21 @@ pull request.
 
     After adding the above definition I am going to send a pull request to merge to my main account's main branch
 and there I will accept the pull request.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
