@@ -266,7 +266,13 @@ Successfully commited.
 
 Now we are going to move those files which are locally in the .git to github
 
-Now I am going to create a DummyRepo in github
+Now I am going to create a DummyRepo in github named TerminalLearningRepo.
+
+
+I have faced a lot of errors and also i cant able to understand the merging of local repository to the remote
+TerminalLearningRepo in github.
+
+So I will continue this git learning via terminal later.
 
 
 
