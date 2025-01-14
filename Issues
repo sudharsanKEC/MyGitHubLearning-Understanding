@@ -7,7 +7,11 @@ Steps:
 -> Note the line where you want to made the change 
 -> Click on the issue on top
 -> And click the new issue button
--> There you can indicate an issue or suggest for improvements of the code 
+-> There you can indicate an issue or suggest for improvements of the code by commenting
+
+After that you can assign to the person who developed the code in the file where the issue was rised,
+by clicking on the right side button Assignees, when you work as a team.
+
 
 
 
